@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reservation</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   <!-- <link rel="stylesheet" href="style2.css">-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" class="icon" href="Image/svg.svg">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav> 
+            <a href="index.html">  <div class="logo"></div></a>
+           <div class="position"><button class="menu-icon" aria-label="Toggle Menu">&#9776;</button></div> 
+            <ul class="nav-bar">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="more.html">About Us</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="reservation1.html">Reservation</a></li>
+            </ul>
+          </nav>
+    </header>
+    <section class="block-reservation" >
+        <div class="image1-reservation">
+
+        </div>
+        <div class="Contact-name">
+           <span>Contact</span>
+           <p>We offer discounts on our services from time to time. So hurry up to get yours.</p>
+         </div>
+</section>
+<section class="sum-info">
+    <div>
+        <span>Have a question? Call us now</span>
+        <p>+********</p>
+    </div>
+    <div>
+        <span>We are open Mon-Fri</span>
+        <p>Mon – Fri 08:00 – 18:00</p> 
+    </div>
+    <div>
+        <span>Need support? Drop us an email</span>
+        <p>speedcleanservice1@gmail.com</p>
+    </div>
+</section>
+<div class="Contact-name">
+    <span>Contact</span>
+    <p>Book a day and we'll be at your doorstep</p>
+</div>
+    <div class="container">
+        <div class="Accompanying">
+            <span>Cleaning Service</span>
+            <p>Apartment Cleaning,Office Cleaning,House Cleaning, We are available to perform any of your tasks </p>
+            <Button class="button"><a href="#">See more</a></Button>
+        </div>
+    <table id="calendarTable">
+        
+        <!-- Le contenu du calendrier sera généré dynamiquement ici -->
+    </table>
+    
+    </div>
+    <footer>
+        <div class="wave1">
+            <span>© Copyright | Speed Clean 2023. <a href="more.html"></a>All Right Reserved </span>
+        </div>
+        
+    </footer>
+    
+    <div class="reservation-form" id="reservationForm">
+        <div class="reservation-form-content">
+            <div class="largeur">
+            <div class="logo">
+            </div>
+            </div>
+            <span class="close-button" onclick="closeReservationForm();">&times;</span>
+            <h2>Reservation for the <span id="selectedDay"></span> <span id="selectedMonth"></span> <span id="selectedYear"></span></h2>
+            <form action="reservation.php" method="post" onsubmit="return submitForm();">
+                <div class="block">
+                <label for="firstName">
+                <input type="text" id="firstName" required placeholder="FirstName">
+                </label>
+                </div>
+                <div class="block">
+                <label for="lastName">
+                <input type="text" id="lastName" required placeholder="LastName">
+                </label>
+                </div>
+                <div class="block">
+                <label for="location">
+                <input type="text" id="location" required placeholder="Location">
+                </label>
+                </div>
+                <div class="block">
+                    <label for="numero de telephone">
+                        <input type="number" id="phoneNumber" required placeholder="Numero de telephone">
+                    </label>
+                </div>                
+                <div class="block">
+                    <label for="reservationTime">Reservation Time:</label>
+                    <select id="reservationTime" required>
+                        <option value="" disabled selected>Select a time slot</option>
+                        <option value="08:00">08:00 AM - 10:00 AM</option>
+                        <option value="09:00">10:00 AM - 12:00 AM</option>
+                        <!-- Add more time slots here -->
+                        <option value="17:00">05:00 PM - 06:00 PM</option>
+                    </select>
+                </div>
+                <div class="Envoyer">
+                <button type="submit">Réserver</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    
+</body>
+</html>
